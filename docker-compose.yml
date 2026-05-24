@@ -1,0 +1,13 @@
+﻿version: "3.8"
+
+services:
+  frontend:
+    container_name: tutorial_frontend
+    image: niikoo2601/innovatech-frontend:latest
+    ports:
+      - "80:80"
+    restart: always
+
+networks:
+  default:
+    driver: bridge
